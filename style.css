@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  margin: 0;
+}
+
+h1, h6 {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
