@@ -1,7 +1,6 @@
-
-@import "./Utils/mixins","./Utils/colors";
+@import "./Utils/mixins","./Utils/colors","./Utils/animation";
 @import "./base/reset","./base/_typography";
-@import "./Components/badge","./Components/like","./Components/btn";
+@import "./Components/badge","./Components/like","./Components/btn","./Components/check";
 @import "./Pages/resto";
 
 
