@@ -1,15 +1,11 @@
 {
-  "name": "project-3",
+  "name": "projet-ohmyfoods",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.scss style.css"
+    "sass":"sass --watch ./style.scss:./style.css"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.54.9"
-  }
+  "license": "ISC"
 }
