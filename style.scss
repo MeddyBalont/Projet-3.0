@@ -1,0 +1,259 @@
+@import "./Utils/mixins","./Utils/colors","./Utils/animation";
+@import "./base/reset","./base/_typography";
+@import "./Components/badge","./Components/like","./Components/btn","./Components/check";
+@import "./Pages/resto";
+
+
+/*Loader*/
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    animation: loader 5s forwards;
+}
+
+/*Animation loader*/
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+.loader__circle {
+    border: 10px solid #F3F3F3;
+    border-top: 10px solid $primary-color;
+    border-bottom: 10px solid $secondary-color;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear forwards;
+
+    /*Placement du loader au milieu de la page*/
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Animation du loader circle*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+//------------HEADER-------------//
+
+.header{
+    height: 63px;
+    padding: 20px 0px 10px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//----------POSITION---------//
+
+.position{
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-weight: 700;
+    box-shadow: inset 0px 2px 5px 0px $shadow-color;
+    &__icon{
+        margin-right: 15px;
+    }
+    &__text{
+        display: inline-block;
+    }
+}
+
+//------------RESEARCH---------// 
+
+.research{
+    padding: 40px 30px 55px 30px;
+    background-color: #f6f6f6;
+    text-align: center;
+    &__title{
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    &__parag{
+        margin-bottom: 30px;
+    }
+}
+
+//-----------TUTO------------// 
+
+.tuto{
+        padding: 55px 20px 45px 20px;
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__card{
+            height: 75px;
+            display: flex;
+            align-items: center;
+            background-color: #f6f6f6;
+            @include shadow;
+            border-radius: 10px 10px 10px 10px;
+            padding: 0 70px 0 30px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        
+        &__icon{
+            margin-right: 15px;
+            color: $shadow-color;
+        }
+        &__number{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: -45px;
+            color: white;
+        }
+        &:hover{
+            background-color: lighten($primary-color, $amount: 35%);
+        }
+        &:hover :nth-child(2){
+            color: $primary-color;
+        }
+    }
+
+}
+
+// -----------RESTAURANTS-----------
+.restaurants{
+    padding:  55px 20px 45px 20px;
+    background-color: #f6f6f6;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__card{
+        position: relative;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      @include shadow;
+      &__img{
+          display: block;
+          max-height: 175px;
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+          object-fit: cover;
+      }
+      &__txt{
+          padding: 20px 15px 20px 15px;
+          display: flex;
+          justify-content: space-between;
+      }
+    }  
+  }
+  
+  
+  // -----------FOOTER-----------
+  .footer{
+      background-color: #353535;
+      padding: 25px;
+      &__logo{
+          font-size: 24px;
+          font-family: 'Shrikhand', sans-serif;
+          color: white;
+          margin-bottom: 15px;
+      }
+      &__txt{
+          color: white;
+      }
+      &__icons{
+          margin-right: 10px;
+      }
+      &__list{
+          margin-bottom: 10px;
+      }
+  }
+  
+  @media screen and (min-width: 750px) {
+      .container{
+          width: 75%;
+          margin: auto; 
+      }
+      h2{
+          width: 75%;
+          margin: auto; 
+      }
+      
+  }
+  
+  @media screen and (min-width: 1024px) {
+      .container{
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          width: 100%;
+          &__card{
+              width: 49%;
+          }
+      }
+  
+      h2, .footer__logo{
+          width: 100%;
+          margin: 0;
+      }
+  
+      .dishes{
+          width: 25%;
+      }
+  
+      .pr_main{
+          width: 80%;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+  
+      }
+      
+  }
+  
+  @media screen and (min-width: 1920px){
+      .container{
+          max-width: 75%;
+          margin: auto;
+      }
+  
+      h2{
+          text-align: center;
+      }
+  }
