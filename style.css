@@ -9,7 +9,7 @@
   }
 }
 .delay1 {
-  animation-delay: 0.5;
+  animation-delay: 0.5s;
 }
 
 .delay2 {
@@ -244,8 +244,6 @@ h2 {
   box-shadow: 2px 2px 10px #c4c3c0;
   animation: appear 3s;
   animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
-  transform: scaleX(0);
 }
 .dishes__card__txt {
   width: 90%;
