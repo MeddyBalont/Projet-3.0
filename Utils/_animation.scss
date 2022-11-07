@@ -47,6 +47,10 @@
     animation-delay: 4.5s;
 }
 
+.delay10{
+    animation-delay: 5s;
+}
+
 
 
 // Animation pour le soulignage des intitulés "entrées, plats, desserts"
@@ -59,7 +63,6 @@
     }
 }
 
-// Animation pour les circles du loader
 
 // Animation pour le remplissage du coeur "heart"
 @keyframes fill{

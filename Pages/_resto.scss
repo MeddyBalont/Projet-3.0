@@ -61,7 +61,8 @@
         margin-bottom: 15px;
         overflow: hidden;
         @include shadow;
-       animation: appear 3s;
+       animation-name: appear;
+       animation-duration: 3s;
         animation-fill-mode: both;
         &__txt{
             width: 90%;

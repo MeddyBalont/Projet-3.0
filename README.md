@@ -1,5 +1,11 @@
-# Projet-3.0
-Projet 3 openclassroom
+# Ohmyfood
+![image](https://github.com/MeddyBalont/Projet-3.0.git)
 
-11/09/2022 
-Début du projet la partie haute de la page d'acceuil à été créer.
+## Ohmyfood site de réservation de menus en ligne
+Projet axé sur les animations CSS et l'utilisation de SASS.
+
+## Technologies utilisées
+HTML SASS pour une utilisation simplifié de css et des animations
+
+
+

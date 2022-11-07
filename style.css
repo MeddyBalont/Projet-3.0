@@ -44,6 +44,10 @@
   animation-delay: 4.5s;
 }
 
+.delay10 {
+  animation-delay: 5s;
+}
+
 @keyframes progress {
   0% {
     transform: scaleX(0);
@@ -210,7 +214,8 @@ h2 {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 2px 2px 10px #c4c3c0;
-  animation: appear 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   animation-fill-mode: both;
 }
 .dishes__card__txt {
@@ -297,11 +302,11 @@ h2 {
     opacity: 1;
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
     opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
     opacity: 0;
   }
 }
